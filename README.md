@@ -185,7 +185,7 @@ ettercap -G
 
 Launch Ettercap GUI, set interface to eth0, enable Unified Sniffing, run host scan.
 
-![Ettercap launch](https://raw.githubusercontent.com/NaeemAkmal/Advanced-MitM-ARP-Poisoning-DHCP-Spoofing/main/Advanced-MitM-ARP-Poisoning-DHCP-Spoofing/arp-poisoning-mitm/ettercap-gui-launch.png)
+![Ettercap launch](https://raw.githubusercontent.com/NaeemAkmal/Advanced-MitM-ARP-Poisoning-DHCP-Spoofing/main/Advanced-MitM-ARP-Poisoning-DHCP-Spoofing/arp-poisoning-mitm/ettercap-gui-launch.png.png)
 
 > Ettercap 0.8.4 started — Unified sniffing on eth0
 
