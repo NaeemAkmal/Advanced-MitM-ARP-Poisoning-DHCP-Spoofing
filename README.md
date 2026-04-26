@@ -18,7 +18,6 @@
 
 <br/>
 
-![](https://capsule-render.vercel.app/api?type=waving&color=0:1a1a2e,50:16213e,100:0f3460&height=120&section=header&text=Network%20Attack%20Lab&fontSize=32&fontColor=ffffff&fontAlignY=65&animation=fadeIn)
 
 </div>
 
