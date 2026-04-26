@@ -434,6 +434,8 @@ DHCP spoofing: fake ACK assigned to 150.1.7.200
 
 This project is strictly for **educational and research purposes** in a controlled, isolated lab environment. All techniques demonstrated here are performed on systems owned and operated by the researcher. Unauthorized use of these techniques on any network or system without explicit written permission is illegal and unethical. The author takes no responsibility for misuse of this information.
 
+## **Connect with me**
+[**Naeem Akmal on LinkedIn**](https://www.linkedin.com/in/naeemakmal15)
 ---
 
 <div align="center">
@@ -442,8 +444,6 @@ This project is strictly for **educational and research purposes** in a controll
 
 [![GitHub](https://img.shields.io/badge/GitHub-NaeemAkmal-black?style=flat-square&logo=github)](https://github.com/NaeemAkmal)
 
-## **Connect with me**
-[**Naeem Akmal on LinkedIn**](https://www.linkedin.com/in/naeemakmal15)
 *Built for learning — not exploitation*
 
 </div>
