@@ -442,6 +442,8 @@ This project is strictly for **educational and research purposes** in a controll
 
 [![GitHub](https://img.shields.io/badge/GitHub-NaeemAkmal-black?style=flat-square&logo=github)](https://github.com/NaeemAkmal)
 
+## **Connect with me**
+[**Naeem Akmal on LinkedIn**](https://www.linkedin.com/in/naeemakmal15)
 *Built for learning — not exploitation*
 
 </div>
