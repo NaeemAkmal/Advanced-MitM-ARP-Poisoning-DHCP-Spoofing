@@ -17,8 +17,6 @@
 > 💀 **Hands-on demonstration of Man-in-the-Middle attacks using ARP Poisoning and DHCP Spoofing techniques in a controlled virtual lab environment — with full packet-level verification and mitigation strategies.**
 
 <br/>
-
-
 </div>
 
 ---
