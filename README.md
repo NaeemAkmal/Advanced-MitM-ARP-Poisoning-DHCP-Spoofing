@@ -61,7 +61,7 @@ Both attacks were executed in an **isolated virtual lab** using VMware and EVE-N
 
 **Network Topology — ARP Poisoning**
 
-![ARP Topology](arp-poisoning-mitm/network-topology-arp.png)
+![ARP Topology](https://raw.githubusercontent.com/NaeemAkmal/Advanced-MitM-ARP-Poisoning-DHCP-Spoofing/main/Advanced-MitM-ARP-Poisoning-DHCP-Spoofing/arp-poisoning-mitm/network-topology-arp.png)
 
 ---
 
@@ -80,7 +80,7 @@ Both attacks were executed in an **isolated virtual lab** using VMware and EVE-N
 
 **Network Topology — DHCP Spoofing**
 
-![DHCP Topology](dhcp-spoofing/network-topology-gns3.png)
+![DHCP Topology](https://raw.githubusercontent.com/NaeemAkmal/Advanced-MitM-ARP-Poisoning-DHCP-Spoofing/main/Advanced-MitM-ARP-Poisoning-DHCP-Spoofing/dhcp-spoofing/network-topology-gns3.png)
 
 ---
 
@@ -111,19 +111,19 @@ Both victims update their ARP cache with the wrong MAC, so all traffic passes th
 
 **Victim 2 — Windows 10**
 
-![Win10 ipconfig](arp-poisoning-mitm/victim2-win10-ipconfig.png)
+![Win10 ipconfig](https://raw.githubusercontent.com/NaeemAkmal/Advanced-MitM-ARP-Poisoning-DHCP-Spoofing/main/Advanced-MitM-ARP-Poisoning-DHCP-Spoofing/arp-poisoning-mitm/victim2-win10-ipconfig.png)
 
 > Windows 10 — IP: 192.168.23.136 | Gateway: 192.168.23.2
 
 **Victim 1 — Windows 7**
 
-![Win7 ipconfig](arp-poisoning-mitm/victim1-win7-ipconfig.png)
+![Win7 ipconfig](https://raw.githubusercontent.com/NaeemAkmal/Advanced-MitM-ARP-Poisoning-DHCP-Spoofing/main/Advanced-MitM-ARP-Poisoning-DHCP-Spoofing/arp-poisoning-mitm/victim1-win7-ipconfig.png)
 
 > Windows 7 — IP: 192.168.23.135
 
 **Attacker — Kali Linux**
 
-![Kali ip a](arp-poisoning-mitm/attacker-kali-ip-address.png)
+![Kali ip a](https://raw.githubusercontent.com/NaeemAkmal/Advanced-MitM-ARP-Poisoning-DHCP-Spoofing/main/Advanced-MitM-ARP-Poisoning-DHCP-Spoofing/arp-poisoning-mitm/attacker-kali-ip-address.png)
 
 > Kali — eth0: 192.168.23.129 | eth1: 150.1.7.101
 
@@ -133,17 +133,17 @@ Both victims update their ARP cache with the wrong MAC, so all traffic passes th
 
 **Kali pinging both victims**
 
-![Kali ping victims](arp-poisoning-mitm/connectivity-kali-ping-victims.png)
+![Kali ping victims](https://raw.githubusercontent.com/NaeemAkmal/Advanced-MitM-ARP-Poisoning-DHCP-Spoofing/main/Advanced-MitM-ARP-Poisoning-DHCP-Spoofing/arp-poisoning-mitm/connectivity-kali-ping-victims.png)
 
 > Kali successfully reaches Win7 (.135) and Win10 (.136)
 
 **Win7 pinging Win10**
 
-![Win7 ping Win10](arp-poisoning-mitm/connectivity-win7-ping-win10.png)
+![Win7 ping Win10](https://raw.githubusercontent.com/NaeemAkmal/Advanced-MitM-ARP-Poisoning-DHCP-Spoofing/main/Advanced-MitM-ARP-Poisoning-DHCP-Spoofing/arp-poisoning-mitm/connectivity-win7-ping-win10.png)
 
 **Win10 pinging Win7**
 
-![Win10 ping Win7](arp-poisoning-mitm/connectivity-win10-ping-win7.png)
+![Win10 ping Win7](https://raw.githubusercontent.com/NaeemAkmal/Advanced-MitM-ARP-Poisoning-DHCP-Spoofing/main/Advanced-MitM-ARP-Poisoning-DHCP-Spoofing/arp-poisoning-mitm/connectivity-win10-ping-win7.png)
 
 ---
 
@@ -157,7 +157,7 @@ cat /proc/sys/net/ipv4/ip_forward
 # output must be: 1
 ```
 
-![IP Forwarding](arp-poisoning-mitm/kali-ip-forwarding-enabled.png)
+![IP Forwarding](https://raw.githubusercontent.com/NaeemAkmal/Advanced-MitM-ARP-Poisoning-DHCP-Spoofing/main/Advanced-MitM-ARP-Poisoning-DHCP-Spoofing/arp-poisoning-mitm/kali-ip-forwarding-enabled.png)
 
 > Value confirmed as 1 — forwarding active
 
@@ -167,13 +167,13 @@ cat /proc/sys/net/ipv4/ip_forward
 
 **Win7 ARP Table — Before Attack**
 
-![Win7 ARP before](arp-poisoning-mitm/arp-table-win7-before-attack.png)
+![Win7 ARP before](https://raw.githubusercontent.com/NaeemAkmal/Advanced-MitM-ARP-Poisoning-DHCP-Spoofing/main/Advanced-MitM-ARP-Poisoning-DHCP-Spoofing/arp-poisoning-mitm/arp-table-win7-before-attack.png)
 
 > Legitimate MAC addresses mapped correctly
 
 **Kali ARP Table — Before Attack**
 
-![Kali ARP before](arp-poisoning-mitm/arp-table-kali-before-attack.png)
+![Kali ARP before](https://raw.githubusercontent.com/NaeemAkmal/Advanced-MitM-ARP-Poisoning-DHCP-Spoofing/main/Advanced-MitM-ARP-Poisoning-DHCP-Spoofing/arp-poisoning-mitm/arp-table-kali-before-attack.png)
 
 ---
 
@@ -185,11 +185,11 @@ ettercap -G
 
 Launch Ettercap GUI, set interface to eth0, enable Unified Sniffing, run host scan.
 
-![Ettercap launch](arp-poisoning-mitm/ettercap-gui-launch.png)
+![Ettercap launch](https://raw.githubusercontent.com/NaeemAkmal/Advanced-MitM-ARP-Poisoning-DHCP-Spoofing/main/Advanced-MitM-ARP-Poisoning-DHCP-Spoofing/arp-poisoning-mitm/ettercap-gui-launch.png)
 
 > Ettercap 0.8.4 started — Unified sniffing on eth0
 
-![Ettercap host scan](arp-poisoning-mitm/ettercap-host-scan-results.png)
+![Ettercap host scan](https://raw.githubusercontent.com/NaeemAkmal/Advanced-MitM-ARP-Poisoning-DHCP-Spoofing/main/Advanced-MitM-ARP-Poisoning-DHCP-Spoofing/arp-poisoning-mitm/ettercap-host-scan-results.png)
 
 > 5 hosts discovered on the network
 
@@ -197,7 +197,7 @@ Assign targets:
 - 192.168.23.135 — Add to Target 1
 - 192.168.23.136 — Add to Target 2
 
-![Ettercap targets](arp-poisoning-mitm/ettercap-targets-assigned.png)
+![Ettercap targets](https://raw.githubusercontent.com/NaeemAkmal/Advanced-MitM-ARP-Poisoning-DHCP-Spoofing/main/Advanced-MitM-ARP-Poisoning-DHCP-Spoofing/arp-poisoning-mitm/ettercap-targets-assigned.png)
 
 Then: MITM → ARP Poisoning → OK → Start Sniffing
 
@@ -207,13 +207,13 @@ Then: MITM → ARP Poisoning → OK → Start Sniffing
 
 **Win7 ARP Table — After (Poisoned)**
 
-![Win7 ARP after](arp-poisoning-mitm/arp-table-win7-after-poisoning.png)
+![Win7 ARP after](https://raw.githubusercontent.com/NaeemAkmal/Advanced-MitM-ARP-Poisoning-DHCP-Spoofing/main/Advanced-MitM-ARP-Poisoning-DHCP-Spoofing/arp-poisoning-mitm/arp-table-win7-after-poisoning.png)
 
 > Win10's IP (192.168.23.136) now maps to Attacker's MAC 00:0C:29:D6:40:F4
 
 **Win10 ARP Table — After (Poisoned)**
 
-![Win10 ARP after](arp-poisoning-mitm/arp-table-win10-after-poisoning.png)
+![Win10 ARP after](https://raw.githubusercontent.com/NaeemAkmal/Advanced-MitM-ARP-Poisoning-DHCP-Spoofing/main/Advanced-MitM-ARP-Poisoning-DHCP-Spoofing/arp-poisoning-mitm/arp-table-win10-after-poisoning.png)
 
 > Win7's IP (192.168.23.135) now maps to Attacker's MAC — poison confirmed
 
@@ -223,19 +223,19 @@ Then: MITM → ARP Poisoning → OK → Start Sniffing
 
 **ICMP traffic intercepted on Kali**
 
-![Wireshark ICMP](arp-poisoning-mitm/wireshark-icmp-interception.png)
+![Wireshark ICMP](https://raw.githubusercontent.com/NaeemAkmal/Advanced-MitM-ARP-Poisoning-DHCP-Spoofing/main/Advanced-MitM-ARP-Poisoning-DHCP-Spoofing/arp-poisoning-mitm/wireshark-icmp-interception.png)
 
 > ICMP packets between .135 and .136 fully visible on Kali — interception confirmed
 
 **Forged ARP Replies**
 
-![Wireshark ARP forged](arp-poisoning-mitm/wireshark-arp-forged-replies.png)
+![Wireshark ARP forged](https://raw.githubusercontent.com/NaeemAkmal/Advanced-MitM-ARP-Poisoning-DHCP-Spoofing/main/Advanced-MitM-ARP-Poisoning-DHCP-Spoofing/arp-poisoning-mitm/wireshark-arp-forged-replies.png)
 
 > Filter arp.opcode == 2 shows continuous forged ARP replies from attacker
 
 **Duplicate IP Detected**
 
-![Wireshark duplicate](arp-poisoning-mitm/wireshark-duplicate-arp-detected.png)
+![Wireshark duplicate](https://raw.githubusercontent.com/NaeemAkmal/Advanced-MitM-ARP-Poisoning-DHCP-Spoofing/main/Advanced-MitM-ARP-Poisoning-DHCP-Spoofing/arp-poisoning-mitm/wireshark-duplicate-arp-detected.png)
 
 > arp.duplicate-address-detected confirms the ARP conflict caused by poisoning
 
@@ -285,7 +285,7 @@ Router(dhcp-config)# default-router 150.1.7.103
 Router(dhcp-config)# dns-server 8.8.8.8
 ```
 
-![R1 DHCP config](dhcp-spoofing/r1-dhcp-server-configuration.png)
+![R1 DHCP config](https://raw.githubusercontent.com/NaeemAkmal/Advanced-MitM-ARP-Poisoning-DHCP-Spoofing/main/Advanced-MitM-ARP-Poisoning-DHCP-Spoofing/dhcp-spoofing/r1-dhcp-server-configuration.png)
 
 > R1 configured with pool 150.1.7.0/24, gateway .103, DNS 8.8.8.8
 
@@ -299,11 +299,11 @@ Router(config-if)# ip address dhcp
 Router(config-if)# no shutdown
 ```
 
-![R2 client config](dhcp-spoofing/r2-dhcp-client-interface-setup.png)
+![R2 client config](https://raw.githubusercontent.com/NaeemAkmal/Advanced-MitM-ARP-Poisoning-DHCP-Spoofing/main/Advanced-MitM-ARP-Poisoning-DHCP-Spoofing/dhcp-spoofing/r2-dhcp-client-interface-setup.png)
 
 **R2 receives legitimate IP from R1**
 
-![R2 legitimate IP](dhcp-spoofing/r2-legitimate-ip-assigned.png)
+![R2 legitimate IP](https://raw.githubusercontent.com/NaeemAkmal/Advanced-MitM-ARP-Poisoning-DHCP-Spoofing/main/Advanced-MitM-ARP-Poisoning-DHCP-Spoofing/dhcp-spoofing/r2-legitimate-ip-assigned.png)
 
 > show ip interface brief — R2 gets 150.1.7.111 from R1
 
@@ -317,7 +317,7 @@ sudo ettercap -G
 
 Set interface to ens34 → Enable Unified Sniffing
 
-![Ettercap launch](dhcp-spoofing/ettercap-launch-parrot-os.png)
+![Ettercap launch](https://raw.githubusercontent.com/NaeemAkmal/Advanced-MitM-ARP-Poisoning-DHCP-Spoofing/main/Advanced-MitM-ARP-Poisoning-DHCP-Spoofing/dhcp-spoofing/ettercap-launch-parrot-os.png)
 
 > Ettercap 0.8.3.1 launched on Parrot OS — interface ens34
 
@@ -325,7 +325,7 @@ Set interface to ens34 → Enable Unified Sniffing
 
 ### Step 4 — Scan Hosts
 
-![Ettercap hosts](dhcp-spoofing/ettercap-host-discovery.png)
+![Ettercap hosts](https://raw.githubusercontent.com/NaeemAkmal/Advanced-MitM-ARP-Poisoning-DHCP-Spoofing/main/Advanced-MitM-ARP-Poisoning-DHCP-Spoofing/dhcp-spoofing/ettercap-host-discovery.png)
 
 > 3 hosts found: 150.1.7.100 (VMNet1), 150.1.7.103 (R1 DHCP Server), 150.1.7.111 (R2 Client)
 
@@ -341,7 +341,7 @@ Netmask:    255.255.255.0
 DNS Server: 150.1.7.101   (attacker)
 ```
 
-![DHCP spoof config](dhcp-spoofing/ettercap-dhcp-spoofing-config.png)
+![DHCP spoof config](https://raw.githubusercontent.com/NaeemAkmal/Advanced-MitM-ARP-Poisoning-DHCP-Spoofing/main/Advanced-MitM-ARP-Poisoning-DHCP-Spoofing/dhcp-spoofing/ettercap-dhcp-spoofing-config.png)
 
 > Rogue DHCP pool set — Ettercap now listening for DISCOVER packets
 
@@ -355,7 +355,7 @@ Router(config-if)# shutdown
 Router(config-if)# no shutdown
 ```
 
-![R2 DHCP trigger](dhcp-spoofing/r2-dhcp-request-triggered.png)
+![R2 DHCP trigger](https://raw.githubusercontent.com/NaeemAkmal/Advanced-MitM-ARP-Poisoning-DHCP-Spoofing/main/Advanced-MitM-ARP-Poisoning-DHCP-Spoofing/dhcp-spoofing/r2-dhcp-request-triggered.png)
 
 > Interface cycled — R2 broadcasts a fresh DHCP DISCOVER
 
@@ -363,13 +363,13 @@ Router(config-if)# no shutdown
 
 ### Step 7 — R2 Receives Rogue IP from Attacker
 
-![R2 rogue IP](dhcp-spoofing/r2-rogue-ip-assigned.png)
+![R2 rogue IP](https://raw.githubusercontent.com/NaeemAkmal/Advanced-MitM-ARP-Poisoning-DHCP-Spoofing/main/Advanced-MitM-ARP-Poisoning-DHCP-Spoofing/dhcp-spoofing/r2-rogue-ip-assigned.png)
 
 > show ip interface brief — R2 now has 150.1.7.200 via DHCP from attacker — attack successful
 
 **Ettercap DHCP Exchange Log**
 
-![Ettercap DHCP log](dhcp-spoofing/ettercap-dhcp-spoofing-log.png)
+![Ettercap DHCP log](https://raw.githubusercontent.com/NaeemAkmal/Advanced-MitM-ARP-Poisoning-DHCP-Spoofing/main/Advanced-MitM-ARP-Poisoning-DHCP-Spoofing/dhcp-spoofing/ettercap-dhcp-spoofing-log.png)
 
 ```
 DHCP: [AA:BB:CC:00:20:00] DISCOVER
