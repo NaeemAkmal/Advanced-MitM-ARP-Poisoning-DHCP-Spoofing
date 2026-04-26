@@ -13,11 +13,10 @@
 [![Educational](https://img.shields.io/badge/Purpose-Educational-purple?style=for-the-badge)]()
 
 <br/>
-> 💀 **Hands-on demonstration of Man-in-the-Middle attacks using ARP Poisoning and DHCP Spoofing techniques in a controlled virtual lab environment — with full packet-level verification and mitigation strategies.**
+  **Hands-on demonstration of Man-in-the-Middle attacks using ARP Poisoning and DHCP Spoofing techniques in a controlled virtual lab environment — with full packet-level verification and mitigation strategies.**
 
 <br/>
 </div>
-
 ---
 
 ## 📑 Table of Contents
